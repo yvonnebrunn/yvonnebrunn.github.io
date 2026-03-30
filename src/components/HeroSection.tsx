@@ -36,7 +36,7 @@ const HeroSection = () => {
             className="text-center"
           >
             <p className="text-primary font-body text-sm tracking-[0.4em] uppercase mb-6">
-              Begleitung in Zeiten des Wandels
+              Ihre Brücke aus der Krise in die Neuausrichtung
             </p>
 
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-foreground leading-[1.1] mb-8">
