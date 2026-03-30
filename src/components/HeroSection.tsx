@@ -76,7 +76,7 @@ const HeroSection = () => {
                 href="#about"
                 className="inline-block border border-primary/30 text-foreground font-body font-medium px-8 py-4 rounded-lg hover:bg-primary/5 transition-colors text-base tracking-wide"
               >
-                Mehr erfahren
+                So kann ich Ihnen helfen
               </a>
             </motion.div>
           </motion.div>
