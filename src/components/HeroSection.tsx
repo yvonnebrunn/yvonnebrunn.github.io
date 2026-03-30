@@ -1,64 +1,100 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src={heroBg}
-          alt="Sanfte Natur – Übergang und Wachstum"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-background/60" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      {/* Subtle decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <p className="text-primary font-body text-lg tracking-[0.3em] uppercase mb-4">
-            Übergangsbegleitung
-          </p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-foreground leading-tight mb-6">
-            Vom Überleben
-            <br />
-            <span className="italic text-primary">zum Leben</span>
-          </h1>
-          <motion.p
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          {/* Caterpillar to butterfly transformation line */}
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+            transition={{ duration: 1.2 }}
+            className="flex items-center justify-center gap-4 mb-12"
           >
-            Begleitung in Zeiten des Wandels – einfühlsam, kraftvoll und mit dem Blick
-            auf das, was in Ihnen wachsen möchte.
-          </motion.p>
-          <motion.a
-            href="#kontakt"
-            initial={{ opacity: 0, y: 10 }}
+            <span className="text-3xl" role="img" aria-label="Raupe">🐛</span>
+            <div className="flex-1 max-w-xs h-px bg-gradient-to-r from-primary/20 via-primary/60 to-primary/20 relative">
+              <motion.div
+                className="absolute top-1/2 -translate-y-1/2 w-2 h-2 bg-primary rounded-full"
+                animate={{ x: ["0%", "100%", "0%"] }}
+                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+              />
+            </div>
+            <span className="text-3xl" role="img" aria-label="Schmetterling">🦋</span>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-            className="inline-block bg-primary text-primary-foreground font-body font-medium px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-lg"
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-center"
           >
-            Kontakt aufnehmen
-          </motion.a>
-        </motion.div>
+            <p className="text-primary font-body text-sm tracking-[0.4em] uppercase mb-6">
+              Begleitung in Zeiten des Wandels
+            </p>
+
+            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-foreground leading-[1.1] mb-8">
+              Vom Überleben
+              <br />
+              <span className="italic text-primary">zum Leben</span>
+            </h1>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.7 }}
+              className="max-w-2xl mx-auto mb-12"
+            >
+              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Jede Veränderung trägt die Möglichkeit eines Neuanfangs in sich –
+                wie die Raupe, die zum Schmetterling wird.
+              </p>
+              <p className="font-body text-base text-muted-foreground/80 mt-4">
+                Ich begleite Sie einfühlsam und klar durch Krisenzeiten.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.6 }}
+              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            >
+              <a
+                href="#kontakt"
+                className="inline-block bg-primary text-primary-foreground font-body font-medium px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-base tracking-wide"
+              >
+                Kontakt aufnehmen
+              </a>
+              <a
+                href="#about"
+                className="inline-block border border-primary/30 text-foreground font-body font-medium px-8 py-4 rounded-lg hover:bg-primary/5 transition-colors text-base tracking-wide"
+              >
+                Mehr erfahren
+              </a>
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
 
+      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
-        <div className="w-6 h-10 border-2 border-primary/40 rounded-full flex justify-center pt-2">
+        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center pt-2">
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ repeat: Infinity, duration: 1.8 }}
-            className="w-1.5 h-1.5 bg-primary rounded-full"
+            className="w-1.5 h-1.5 bg-primary/60 rounded-full"
           />
         </div>
       </motion.div>
