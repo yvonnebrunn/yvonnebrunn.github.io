@@ -70,7 +70,7 @@ const HeroSection = () => {
                 href="#kontakt"
                 className="inline-block bg-primary text-primary-foreground font-body font-medium px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-base tracking-wide"
               >
-                Kontakt aufnehmen
+                Sprechen wir darüber
               </a>
               <a
                 href="#about"
