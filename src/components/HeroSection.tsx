@@ -70,13 +70,13 @@ const HeroSection = () => {
                 href="#kontakt"
                 className="inline-block bg-primary text-primary-foreground font-body font-medium px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-base tracking-wide"
               >
-                Kontakt aufnehmen
+                Sprechen wir darüber
               </a>
               <a
                 href="#about"
                 className="inline-block border border-primary/30 text-foreground font-body font-medium px-8 py-4 rounded-lg hover:bg-primary/5 transition-colors text-base tracking-wide"
               >
-                Mehr erfahren
+                So kann ich Ihnen helfen
               </a>
             </motion.div>
           </motion.div>
