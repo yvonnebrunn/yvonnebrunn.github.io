@@ -21,7 +21,7 @@ const ContactSection = () => {
 
     if (!name || !email || !message) {
       toast({
-        title: "Bitte füllen Sie alle Felder aus.",
+        title: "Bitte füll alle Felder aus.",
         variant: "destructive",
       });
       return;
@@ -41,7 +41,7 @@ const ContactSection = () => {
       setSending(false);
       toast({
         title: "Nachricht gesendet!",
-        description: "Vielen Dank für Ihre Nachricht. Ich melde mich bald bei Ihnen.",
+        description: "Vielen Dank für deine Nachricht. Ich melde mich bald bei dir.",
       });
       setFormData({ name: "", email: "", message: "" });
     }, 1000);
@@ -61,11 +61,11 @@ const ContactSection = () => {
             Kontakt
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
-            Lassen Sie uns <span className="italic text-primary">sprechen</span>
+            Lass uns <span className="italic text-primary">sprechen</span>
           </h2>
           <p className="font-body text-muted-foreground max-w-xl mx-auto text-lg leading-relaxed">
-            Der erste Schritt ist oft der schwerste. Schreiben Sie mir – ich freue mich
-            auf Ihre Nachricht.
+            Der erste Schritt ist oft der schwerste. Schreib mir – ich freu mich
+            auf deine Nachricht.
           </p>
         </motion.div>
 
@@ -118,7 +118,7 @@ const ContactSection = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full bg-background border border-border rounded-lg px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
-                placeholder="ihre@email.de"
+                placeholder="deine@email.de"
               />
             </div>
             <div>
@@ -132,7 +132,7 @@ const ContactSection = () => {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="w-full bg-background border border-border rounded-lg px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow resize-none"
-                placeholder="Was bewegt Sie?"
+                placeholder="Was bewegt dich?"
               />
             </div>
             <button

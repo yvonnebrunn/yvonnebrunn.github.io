@@ -36,7 +36,7 @@ const HeroSection = () => {
             className="text-center"
           >
             <p className="text-primary font-body text-sm tracking-[0.4em] uppercase mb-6">
-              Ihre Brücke aus der Krise in die Neuausrichtung
+              Deine Brücke aus der Krise in die Neuausrichtung
             </p>
 
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-foreground leading-[1.1] mb-8">
@@ -57,7 +57,7 @@ const HeroSection = () => {
                 wie die Raupe, die zum Schmetterling wird.
               </p>
               <p className="font-body text-base text-muted-foreground/80 mt-4">
-                Ich begleite Sie einfühlsam und klar durch Krisenzeiten.
+                Ich begleite dich einfühlsam und klar durch Krisenzeiten.
               </p>
             </motion.div>
 
@@ -77,7 +77,7 @@ const HeroSection = () => {
                 href="#about"
                 className="inline-block border border-primary/30 text-foreground font-body font-medium px-8 py-4 rounded-lg hover:bg-primary/5 transition-colors text-base tracking-wide"
               >
-                So kann ich Ihnen helfen
+                So kann ich dir helfen
               </a>
             </motion.div>
           </motion.div>
