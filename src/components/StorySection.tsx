@@ -42,7 +42,7 @@ const StorySection = () => {
             </p>
 
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-8 leading-tight">
-              Vom Schatten zur Löwenmama:{" "}
+              Vom Schatten ins Licht: <br />
               <span className="italic text-primary">Meine 24-jährige Reise</span>
             </h2>
 
