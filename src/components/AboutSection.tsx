@@ -6,19 +6,19 @@ const values = [
     icon: Shield,
     title: "Sicherheit",
     description:
-      "Ein geschützter Raum, in dem Sie sich öffnen können – ohne Bewertung, mit voller Vertraulichkeit.",
+      "Ein geschützter Raum, in dem du dich öffnen kannst – ohne Bewertung, mit voller Vertraulichkeit.",
   },
   {
     icon: Heart,
     title: "Empathie",
     description:
-      "Ich höre zu und begleite Sie mit echtem Mitgefühl durch schwierige Lebensphasen.",
+      "Ich höre zu und begleite dich mit echtem Mitgefühl durch schwierige Lebensphasen.",
   },
   {
     icon: Leaf,
     title: "Wachstum",
     description:
-      "Wie die Raupe zum Schmetterling wird, entdecken wir gemeinsam Ihre inneren Ressourcen und Stärken.",
+      "Wie die Raupe zum Schmetterling wird, entdecken wir gemeinsam deine inneren Ressourcen und Stärken.",
   },
   {
     icon: Sun,
@@ -58,10 +58,10 @@ const AboutSection = () => {
           </h2>
           <div className="w-16 h-px bg-primary/40 mx-auto mb-8" />
           <p className="font-body text-muted-foreground text-lg leading-relaxed">
-            In Krisenzeiten brauchen Sie jemanden, der Ihnen Halt gibt und
-            gleichzeitig den Blick nach vorn richtet. Ich begleite Sie auf
+            In Krisenzeiten brauchst du jemanden, der dir Halt gibt und
+            gleichzeitig den Blick nach vorn richtet. Ich begleite dich auf
             diesem Weg – strukturiert, einfühlsam und mit dem Vertrauen in
-            Ihre eigene Wandlungskraft.
+            deine eigene Wandlungskraft.
           </p>
         </motion.div>
 

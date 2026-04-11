@@ -17,7 +17,7 @@ const services = [
     number: "03",
     title: "Persönliche Entwicklung",
     description:
-      "Von der inneren Krise zur äußeren Veränderung – Ihre Transformation vom Überleben zum Leben.",
+      "Von der inneren Krise zur äußeren Veränderung – deine Transformation vom Überleben zum Leben.",
   },
 ];
 
@@ -36,11 +36,11 @@ const ServicesSection = () => {
             Angebot
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-            Mein <span className="italic text-primary">Weg</span> mit Ihnen
+            Mein <span className="italic text-primary">Weg</span> mit dir
           </h2>
           <div className="w-16 h-px bg-primary/40 mx-auto mb-8" />
           <p className="font-body text-muted-foreground text-lg leading-relaxed">
-            Drei Phasen der Begleitung – angepasst an Ihre Situation und Ihr Tempo.
+            Drei Phasen der Begleitung – angepasst an deine Situation und dein Tempo.
           </p>
         </motion.div>
 
