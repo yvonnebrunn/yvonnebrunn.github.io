@@ -1,12 +1,19 @@
 import { motion } from "framer-motion";
+import raupeSchmetterling from "@/assets/raupe-schmetterling.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
-      {/* Subtle decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src={raupeSchmetterling}
+          alt="Transformation – von der Raupe zum Schmetterling"
+          className="w-full h-full object-cover"
+        />
+        {/* Sage-green tinted overlay for readability and color harmony */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80" />
+        <div className="absolute inset-0 bg-primary/10" />
       </div>
 
       <div className="relative z-10 container mx-auto px-6">
