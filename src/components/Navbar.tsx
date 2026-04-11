@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between h-18">
         <a href="#" className="flex items-baseline gap-0 font-display text-xl text-foreground">
           <span className="font-medium">Yvonne</span>
-          <span className="text-primary mx-0.5">_</span>
+          <span className="text-primary mx-0.5">​  </span>
           <span className="text-primary font-normal text-lg">Übergangsbegleitung</span>
         </a>
 
