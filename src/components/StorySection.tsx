@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import yvonnePortrait from "@/assets/yvonne-portrait.jpg";
 
 const StorySection = () => {
   return (
