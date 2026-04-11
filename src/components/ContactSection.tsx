@@ -80,7 +80,7 @@ const ContactSection = () => {
             <Mail className="w-5 h-5 text-primary" />
             <span className="font-body text-lg">
               {/* E-Mail-Adresse hier eintragen */}
-              ihre-email@beispiel.de
+              kontakt.y.brunn@gmail.com
             </span>
           </motion.div>
 
