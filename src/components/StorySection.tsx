@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import yvonnePortrait from "@/assets/yvonne-portrait.jpg";
 
 const StorySection = () => {
   return (
@@ -13,15 +14,19 @@ const StorySection = () => {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl shadow-primary/10 bg-secondary flex items-center justify-center">
-              {/* Replace src with your photo */}
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl shadow-primary/10 bg-secondary flex items-center justify-center relative">
+              {/* Portrait photo of Yvonne */}
               <img
-                src="/placeholder.svg"
+                src={yvonnePortrait}
                 alt="Yvonne – Übergangsbegleiterin"
                 className="w-full h-full object-cover"
               />
               {/* Subtle overlay for style */}
               <div className="absolute inset-0 rounded-2xl ring-1 ring-primary/10" />
+              
+              {/* Transformation symbols */}
+              <span className="absolute bottom-4 left-4 text-2xl md:text-3xl bg-background/80 backdrop-blur-sm rounded-full px-2 py-1" role="img" aria-label="Raupe">🐛</span>
+              <span className="absolute bottom-4 right-4 text-2xl md:text-3xl bg-background/80 backdrop-blur-sm rounded-full px-2 py-1" role="img" aria-label="Schmetterling">🦋</span>
             </div>
           </motion.div>
 
