@@ -51,7 +51,8 @@ const HeroSection = () => {
               transition={{ delay: 0.5, duration: 0.7 }}
               className="max-w-2xl mx-auto mb-12"
             >
-              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
+              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
+                {"\n\n\n\n"}
                 Jede Veränderung trägt die Möglichkeit eines Neuanfangs in sich –
                 wie die Raupe, die zum Schmetterling wird.
               </p>
