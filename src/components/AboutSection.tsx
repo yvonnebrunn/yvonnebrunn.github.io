@@ -1,30 +1,30 @@
 import { motion } from "framer-motion";
-import { Heart, Leaf, Sun, Shield } from "lucide-react";
+import { ShieldCheck, Search, Users, FileText } from "lucide-react";
 
 const values = [
   {
-    icon: Shield,
-    title: "Sicherheit",
+    icon: ShieldCheck,
+    title: "Narzissmus-Expertise",
     description:
-      "Ein geschützter Raum, in dem du dich öffnen kannst – ohne Bewertung, mit voller Vertraulichkeit.",
+      "Ich kenne toxische Dynamiken aus 24 Jahren eigener Erfahrung. Gemeinsam ordnen wir das Chaos, erkennen Manipulation und finden deine innere Stabilität zurück.",
   },
   {
-    icon: Heart,
-    title: "Empathie",
+    icon: Search,
+    title: "Therapie-Navigation",
     description:
-      "Ich höre zu und begleite dich mit echtem Mitgefühl durch schwierige Lebensphasen.",
+      "Die Suche nach einem Therapieplatz ist oft eine Hürde zu viel. Ich unterstütze dich aktiv bei der Suche, erkläre das System und überbrücke die Wartezeit.",
   },
   {
-    icon: Leaf,
-    title: "Wachstum",
+    icon: Users,
+    title: "Neuanfang mit Kindern",
     description:
-      "Wie die Raupe zum Schmetterling wird, entdecken wir gemeinsam deine inneren Ressourcen und Stärken.",
+      "Trennungen aus toxischen Beziehungen sind komplex. Ich begleite dich dabei, deine Kinder und dich selbst sicher durch den Sturm in ein freies Leben zu führen.",
   },
   {
-    icon: Sun,
-    title: "Klarheit",
+    icon: FileText,
+    title: "Struktur & Anträge",
     description:
-      "Gemeinsam ordnen wir das Chaos und finden klare nächste Schritte für Ihren Weg nach vorn.",
+      "Ob Behörden, Klinik oder Krisenhilfe: Ich helfe dir beim Ausfüllen von Anträgen und finde für dich die passenden Anlaufstellen im Hilfesystem.",
   },
 ];
 
