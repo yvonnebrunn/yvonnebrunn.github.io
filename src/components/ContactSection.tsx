@@ -12,7 +12,7 @@ const ContactSection = () => {
   });
   const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const name = formData.name.trim();
@@ -27,24 +27,36 @@ const ContactSection = () => {
       return;
     }
 
-    if (name.length > 100 || email.length > 255 || message.length > 2000) {
+    setSending(true);
+
+    try {
+      // HIER DEINEN FORMSPREE LINK EINTRAGEN
+      const response = await fetch("https://formspree.io/f/maqawvnq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Nachricht gesendet!",
+          description: "Vielen Dank. Ich melde mich bald bei dir.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error();
+      }
+    } catch (error) {
       toast({
-        title: "Eingabe zu lang.",
+        title: "Fehler beim Senden.",
+        description: "Bitte versuche es später noch einmal oder schreib mir direkt per E-Mail.",
         variant: "destructive",
       });
-      return;
-    }
-
-    setSending(true);
-    // Simulate send
-    setTimeout(() => {
+    } finally {
       setSending(false);
-      toast({
-        title: "Nachricht gesendet!",
-        description: "Vielen Dank für deine Nachricht. Ich melde mich bald bei dir.",
-      });
-      setFormData({ name: "", email: "", message: "" });
-    }, 1000);
+    }
   };
 
   return (
@@ -79,9 +91,7 @@ const ContactSection = () => {
           >
             <Mail className="w-5 h-5 text-primary" />
             <span className="font-body text-lg">
-              {/* E-Mail-Adresse hier eintragen */}
               kontakt.y.brunn@gmail.com
-
             </span>
           </motion.div>
 
@@ -99,12 +109,14 @@ const ContactSection = () => {
               </label>
               <input
                 id="name"
+                name="name"
                 type="text"
                 maxLength={100}
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full bg-background border border-border rounded-lg px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                 placeholder="Ihr Name"
+                required
               />
             </div>
             <div>
@@ -113,12 +125,14 @@ const ContactSection = () => {
               </label>
               <input
                 id="email"
+                name="email"
                 type="email"
                 maxLength={255}
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full bg-background border border-border rounded-lg px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                 placeholder="deine@email.de"
+                required
               />
             </div>
             <div>
@@ -127,12 +141,14 @@ const ContactSection = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 maxLength={2000}
                 rows={5}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="w-full bg-background border border-border rounded-lg px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow resize-none"
                 placeholder="Was bewegt dich?"
+                required
               />
             </div>
             <button
