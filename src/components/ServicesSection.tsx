@@ -3,21 +3,21 @@ import { motion } from "framer-motion";
 const services = [
   {
     number: "01",
-    title: "Krisenbegleitung",
+    title: "Krisenbegleitung & Akuthilfe",
     description:
-      "Soforthilfe in akuten Belastungssituationen. Gemeinsam schaffen wir Stabilität und Orientierung.",
+      "Den Boden unter den Füßen wiederfinden. Ich helfe dir, toxische Dynamiken zu verstehen, das Chaos zu ordnen und emotionale Erstentlastung nach narzisstischem Missbrauch zu finden.",
   },
   {
     number: "02",
-    title: "Übergangsbegleitung",
+    title: "Übergangshilfe & Struktur",
     description:
-      "Begleitung durch Lebenswenden wie Trennung, Verlust, Neuorientierung oder beruflichen Wandel.",
+      "Gemeinsam gehen wir über die Brücke. Ich unterstütze dich ganz praktisch beim Ausfüllen von Anträgen, bei der Vorbereitung auf Behörden oder Kliniken und begleite dich aktiv bei der Suche nach einem Therapieplatz.",
   },
   {
     number: "03",
-    title: "Persönliche Entwicklung",
+    title: "Neuanfang: Vom Überleben zum Leben",
     description:
-      "Von der inneren Krise zur äußeren Veränderung – deine Transformation vom Überleben zum Leben.",
+      "Die Transformation festigen. Wir stärken deinen Selbstwert nach toxischen Beziehungen und entwickeln neue Grenzen, damit du sicher und frei in deinen neuen Lebensabschnitt starten kannst.",
   },
 ];
 
