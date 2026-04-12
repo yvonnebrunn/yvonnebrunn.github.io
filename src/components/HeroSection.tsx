@@ -51,13 +51,12 @@ const HeroSection = () => {
               transition={{ delay: 0.5, duration: 0.7 }}
               className="max-w-2xl mx-auto mb-12"
             >
-              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
+              <p className="font-body text-lg text-muted-foreground leading-relaxed whitespace-pre-line md:text-base">
                 In Zeiten tiefster Verunsicherung und emotionaler Not, wenn die Worte fehlen und die Kraft für den Alltag versagt, bin ich für dich da. Ich kenne den Weg durch die Dunkelheit – und ich weiß, wie man Schritt für Schritt wieder ans Licht findet.
-
-                Jede Veränderung trägt die Möglichkeit eines Neuanfangs in sich – wie die Raupe, die zum Schmetterling wird.
               </p>
-              <p className="font-body text-base text-muted-foreground/80 mt-4">
-                Ich begleite dich einfühlsam und klar durch Krisenzeiten.
+              <p className="font-body text-base text-muted-foreground/80 mt-4 whitespace-pre-line">
+                Ich begleite dich einfühlsam, strukturierend und klar durch Krisenzeiten.
+                Du musst diesen Weg nicht alleine gehen.
               </p>
             </motion.div>
 
