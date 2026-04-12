@@ -12,19 +12,30 @@ const ContactSection = () => {
   });
   const [sending, setSending] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  const form = e.target as HTMLFormElement;
+  const data = new FormData(form);
 
-    const name = formData.name.trim();
-    const email = formData.email.trim();
-    const message = formData.message.trim();
-
-    if (!name || !email || !message) {
-      toast({
-        title: "Bitte füll alle Felder aus.",
-        variant: "destructive",
-      });
-      return;
+  try {
+    const response = await fetch("https://formspree.io/f/DEIN_CODE", {
+      method: "POST",
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    
+    if (response.ok) {
+      alert("Vielen Dank! Ihre Nachricht wurde versendet."); // Oder deine Erfolgsmeldung
+      form.reset();
+    } else {
+      alert("Hoppla! Da gab es ein Problem beim Versenden.");
+    }
+  } catch (error) {
+    alert("Fehler beim Versenden der Nachricht.");
+  }
+};
     }
 
     setSending(true);
