@@ -58,6 +58,9 @@ const HeroSection = () => {
                 Ich begleite dich einfühlsam, strukturierend und klar durch Krisenzeiten.
                 Du musst diesen Weg nicht alleine gehen.
               </p>
+              <p className="font-body text-base italic text-muted-foreground/70 mt-6">
+                Jede Veränderung trägt die Möglichkeit eines Neuanfangs in sich – wie die Raupe, die zum Schmetterling wird.
+              </p>
             </motion.div>
 
             <motion.div
