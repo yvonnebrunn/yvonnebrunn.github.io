@@ -69,6 +69,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       setSending(false);
     }
 
+
   return (
     <section id="kontakt" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
