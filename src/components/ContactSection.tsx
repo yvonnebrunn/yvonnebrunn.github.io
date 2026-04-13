@@ -12,40 +12,17 @@ const ContactSection = () => {
   });
   const [sending, setSending] = useState(false);
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  const form = e.target as HTMLFormElement;
-  const data = new FormData(form);
-
-  try {
-    const response = await fetch("https://formspree.io/f/DEIN_CODE", {
-      method: "POST",
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-    
-    if (response.ok) {
-      alert("Vielen Dank! Ihre Nachricht wurde versendet."); // Oder deine Erfolgsmeldung
-      form.reset();
-    } else {
-      alert("Hoppla! Da gab es ein Problem beim Versenden.");
-    }
-  } catch (error) {
-    alert("Fehler beim Versenden der Nachricht.");
-  }
-};
-    }
-
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
     setSending(true);
 
     try {
-      // HIER DEINEN FORMSPREE LINK EINTRAGEN
+      // Dein funktionierender Formspree-Link
       const response = await fetch("https://formspree.io/f/maqawvnq", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          'Accept': 'application/json'
         },
         body: JSON.stringify(formData),
       });
@@ -57,7 +34,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         });
         setFormData({ name: "", email: "", message: "" });
       } else {
-        throw new Error();
+        throw new Error("Fehler beim Senden");
       }
     } catch (error) {
       toast({
@@ -68,7 +45,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     } finally {
       setSending(false);
     }
-
+  };
 
   return (
     <section id="kontakt" className="py-24 md:py-32 bg-background">
