@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Instagram } from "lucide-react";
 import yvonnePortrait from "@/assets/yvonne-portrait.jpg";
 
 const StorySection = () => {
@@ -53,7 +54,9 @@ const StorySection = () => {
                 der Kindheit und habe selbst eine 10-jährige toxische Beziehung
                 durchlebt. Heute bin ich zweifache Mutter und seit 10 Jahren
                 frei. Diese 24 Jahre persönliche Transformation und Heilung
-                haben mich zur Expertin für deine Krise gemacht.
+                <strong className="font-bold text-foreground">
+                  {" "}haben mich zur Expertin für deine Krise gemacht.
+                </strong>
               </p>
 
               <p className="font-display text-lg md:text-xl italic text-foreground/90 leading-relaxed">
@@ -68,6 +71,51 @@ const StorySection = () => {
             >
               Jetzt Kennenlerngespräch vereinbaren
             </a>
+
+            <div className="mt-8 rounded-2xl bg-cream-white p-6 md:p-8 shadow-sm border border-border/40">
+              <h3 className="font-display text-2xl md:text-3xl text-primary mb-4 leading-tight">
+                Begleitung im Alltag – Lass uns in Verbindung bleiben
+              </h3>
+              <div className="font-body text-muted-foreground text-base leading-relaxed space-y-4">
+                <p>
+                  Auf Instagram nehme ich dich mit hinter die Kulissen meiner
+                  Arbeit als Übergangsbegleiterin. Dort findest du wertvolle
+                  Impulse für deinen Weg:
+                </p>
+                <ul className="space-y-3 list-disc pl-5">
+                  <li>
+                    <strong className="font-semibold text-foreground">
+                      Hilfe in Krisen:
+                    </strong>{" "}
+                    Wie du den ersten Schritt zurück ins Leben findest.
+                  </li>
+                  <li>
+                    <strong className="font-semibold text-foreground">
+                      Toxische Dynamiken:
+                    </strong>{" "}
+                    Strategien und Klarheit im Umgang mit manipulativen
+                    Menschen.
+                  </li>
+                  <li>
+                    <strong className="font-semibold text-foreground">
+                      Einblicke & Austausch:
+                    </strong>{" "}
+                    Tägliche Unterstützung und Übungen für mehr innere
+                    Stabilität.
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="https://instagram.com/yvonne_uebergangsbegleitung"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-instagram-start via-instagram-mid to-instagram-end px-6 py-3 font-body font-semibold text-primary-foreground shadow-md transition-opacity hover:opacity-90"
+              >
+                <Instagram className="h-5 w-5" />
+                <span>@yvonne_uebergangsbegleitung</span>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

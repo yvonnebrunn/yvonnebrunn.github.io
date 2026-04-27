@@ -59,6 +59,14 @@ export default {
           warm: "hsl(var(--beige-warm))",
           light: "hsl(var(--beige-light))",
         },
+        cream: {
+          white: "hsl(var(--cream-white))",
+        },
+        instagram: {
+          start: "hsl(var(--instagram-start))",
+          mid: "hsl(var(--instagram-mid))",
+          end: "hsl(var(--instagram-end))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
