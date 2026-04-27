@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Search, Users, FileText } from "lucide-react";
+import { ShieldCheck, Search, Users, FileText, Instagram } from "lucide-react";
 
 const values = [
   {
