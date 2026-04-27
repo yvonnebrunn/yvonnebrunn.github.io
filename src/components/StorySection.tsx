@@ -54,7 +54,7 @@ const StorySection = () => {
                 der Kindheit und habe selbst eine 10-jährige toxische Beziehung
                 durchlebt. Heute bin ich zweifache Mutter und seit 10 Jahren
                 frei. Diese 24 Jahre persönliche Transformation und Heilung
-                <strong className="font-bold text-foreground">
+                <strong className="font-bold text-primary">
                   {" "}haben mich zur Expertin für deine Krise gemacht.
                 </strong>
               </p>
@@ -72,7 +72,18 @@ const StorySection = () => {
               Jetzt Kennenlerngespräch vereinbaren
             </a>
 
-            <div className="mt-8 rounded-2xl bg-cream-white p-6 md:p-8 shadow-sm border border-border/40">
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="mt-12 max-w-6xl mx-auto rounded-2xl bg-cream-white p-6 md:p-8 shadow-sm border border-border/40"
+        >
+          <div className="grid md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-center">
+            <div>
               <h3 className="font-display text-2xl md:text-3xl text-primary mb-4 leading-tight">
                 Begleitung im Alltag – Lass uns in Verbindung bleiben
               </h3>
@@ -82,22 +93,22 @@ const StorySection = () => {
                   Arbeit als Übergangsbegleiterin. Dort findest du wertvolle
                   Impulse für deinen Weg:
                 </p>
-                <ul className="space-y-3 list-disc pl-5">
+                <ul className="space-y-3 list-disc pl-5 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
                   <li>
-                    <strong className="font-semibold text-foreground">
+                    <strong className="font-semibold text-primary">
                       Hilfe in Krisen:
                     </strong>{" "}
                     Wie du den ersten Schritt zurück ins Leben findest.
                   </li>
                   <li>
-                    <strong className="font-semibold text-foreground">
+                    <strong className="font-semibold text-primary">
                       Toxische Dynamiken:
                     </strong>{" "}
                     Strategien und Klarheit im Umgang mit manipulativen
                     Menschen.
                   </li>
                   <li>
-                    <strong className="font-semibold text-foreground">
+                    <strong className="font-semibold text-primary">
                       Einblicke & Austausch:
                     </strong>{" "}
                     Tägliche Unterstützung und Übungen für mehr innere
@@ -105,19 +116,19 @@ const StorySection = () => {
                   </li>
                 </ul>
               </div>
-
-              <a
-                href="https://instagram.com/yvonne_uebergangsbegleitung"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-instagram-start via-instagram-mid to-instagram-end px-6 py-3 font-body font-semibold text-primary-foreground shadow-md transition-opacity hover:opacity-90"
-              >
-                <Instagram className="h-5 w-5" />
-                <span>@yvonne_uebergangsbegleitung</span>
-              </a>
             </div>
-          </motion.div>
-        </div>
+
+            <a
+              href="https://instagram.com/yvonne_uebergangsbegleitung"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full md:w-auto items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-primary via-accent to-beige-warm px-6 py-3 font-body font-semibold text-primary-foreground shadow-md transition-opacity hover:opacity-90"
+            >
+              <Instagram className="h-5 w-5" />
+              <span>@yvonne_uebergangsbegleitung</span>
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
