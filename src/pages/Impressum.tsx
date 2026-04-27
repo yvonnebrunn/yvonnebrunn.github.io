@@ -17,7 +17,7 @@ const Impressum = () => {
               <p>Yvonne Brunn</p>
               <p>Vom Überleben zum Leben – Übergangsbegleitung</p>
               <p>[folgt]</p>
-              <p>[14169 Berlin]</p>
+              <p>14169 Berlin</p>
             </div>
           </section>
 
