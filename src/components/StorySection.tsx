@@ -53,7 +53,7 @@ const StorySection = () => {
                 der Kindheit und habe selbst eine 10-jährige toxische Beziehung
                 durchlebt. Heute bin ich zweifache Mutter und seit 10 Jahren
                 frei. Diese 24 Jahre persönliche Transformation und Heilung
-                haben mich zur Expertin für Ihre Krise gemacht.
+                haben mich zur Expertin für deine Krise gemacht.
               </p>
 
               <p className="font-display text-lg md:text-xl italic text-foreground/90 leading-relaxed">
