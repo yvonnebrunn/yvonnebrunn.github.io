@@ -29,8 +29,8 @@ const Datenschutz = () => {
               Verantwortlich für die Datenverarbeitung auf dieser Website ist:
             </p>
             <div className="space-y-1">
-              <p className="font-bold text-foreground">Yvonne Brunn</p>
-              <p className="font-bold text-foreground">Vom Überleben zum Leben – Übergangsbegleitung</p>
+              <p className="font-bold text-primary">Yvonne Brunn</p>
+              <p className="font-bold text-primary">Vom Überleben zum Leben – Übergangsbegleitung</p>
               <p>[folgt]</p>
               <p>14169 Berlin</p>
               <p>
