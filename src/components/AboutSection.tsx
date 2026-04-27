@@ -108,6 +108,16 @@ const AboutSection = () => {
             nennt der Rest der Welt Schmetterling."
           </blockquote>
           <p className="font-body text-sm text-muted-foreground mt-4">— Laotse</p>
+
+          <a
+            href="https://instagram.com/yvonne_uebergangsbegleitung"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-6 text-primary hover:text-foreground transition-colors font-body text-sm"
+          >
+            <Instagram className="w-4 h-4" />
+            <span>@yvonne_uebergangsbegleitung</span>
+          </a>
         </motion.div>
       </div>
     </section>
