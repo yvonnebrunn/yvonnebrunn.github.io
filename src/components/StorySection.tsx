@@ -4,7 +4,7 @@ import yvonnePortrait from "@/assets/yvonne-portrait.jpg";
 
 const StorySection = () => {
   return (
-    <section className="py-24 md:py-32 bg-card">
+    <section className="pt-12 md:pt-16 pb-24 md:pb-32 bg-card">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center max-w-6xl mx-auto">
           {/* Column 1: Image */}
@@ -80,7 +80,7 @@ const StorySection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-12 max-w-6xl mx-auto rounded-2xl bg-cream-white p-6 md:p-8 shadow-sm border border-border/40"
+          className="mt-12 max-w-6xl mx-auto rounded-2xl bg-background p-6 md:p-8 shadow-sm border border-border/40"
         >
           <div className="flex flex-col items-start gap-6">
             <div className="w-full">
