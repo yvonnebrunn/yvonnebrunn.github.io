@@ -39,7 +39,7 @@ const fadeInUp = {
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-card">
+    <section id="about" className="pt-24 md:pt-32 pb-12 md:pb-16 bg-card">
       <div className="container mx-auto px-6">
         {/* Section header with clear structure */}
         <motion.div
@@ -100,7 +100,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="max-w-2xl mx-auto mt-20 text-center"
+          className="max-w-2xl mx-auto mt-10 text-center"
         >
           <blockquote className="font-display text-xl md:text-2xl italic text-foreground/80 leading-relaxed">
             „Was die Raupe Ende der Welt nennt,
