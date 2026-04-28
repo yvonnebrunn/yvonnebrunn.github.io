@@ -82,8 +82,8 @@ const StorySection = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-12 max-w-6xl mx-auto rounded-2xl bg-cream-white p-6 md:p-8 shadow-sm border border-border/40"
         >
-          <div className="grid md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-center">
-            <div>
+          <div className="flex flex-col items-start gap-6">
+            <div className="w-full">
               <h3 className="font-display text-2xl md:text-3xl text-primary mb-4 leading-tight">
                 Begleitung im Alltag – Lass uns in Verbindung bleiben
               </h3>
@@ -122,7 +122,7 @@ const StorySection = () => {
               href="https://instagram.com/yvonne_uebergangsbegleitung"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full md:w-auto items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-primary via-accent to-beige-warm px-6 py-3 font-body font-semibold text-primary-foreground shadow-md transition-opacity hover:opacity-90"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-body font-semibold text-primary-foreground shadow-md transition-opacity hover:opacity-90"
             >
               <Instagram className="h-5 w-5" />
               <span>@yvonne_uebergangsbegleitung</span>
