@@ -18,6 +18,9 @@ const Impressum = () => {
               <p className="font-bold text-primary">Vom Überleben zum Leben – Übergangsbegleitung</p>
               <p>[folgt]</p>
               <p>14169 Berlin</p>
+              <p className="pt-2">
+                Wirtschafts-Identifikationsnummer gemäß § 139 c Abgabenordnung: DE462155540
+              </p>
             </div>
           </section>
 
