@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import butterfly from "@/assets/butterfly.png";
 
 const HeroSection = () => {
   return (
@@ -42,7 +43,14 @@ const HeroSection = () => {
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-foreground leading-[1.1] mb-8">
               Vom Überleben
               <br />
-              <span className="italic text-primary">zum Leben</span>
+              <span className="italic text-primary relative inline-block">
+                zum Lebe<span className="relative inline-block">n<img
+                  src={butterfly}
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -top-3 -right-6 md:-top-4 md:-right-8 lg:-top-5 lg:-right-10 w-8 md:w-12 lg:w-14 h-auto select-none"
+                /></span>
+              </span>
             </h1>
 
             <motion.div
