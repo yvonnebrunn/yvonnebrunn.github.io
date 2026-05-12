@@ -48,7 +48,7 @@ const HeroSection = () => {
                   src={butterfly}
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -top-6 -right-7 md:-top-9 md:-right-10 lg:-top-11 lg:-right-12 w-9 md:w-12 lg:w-14 h-auto select-none"
+                  className="pointer-events-none absolute -top-3 -right-6 md:-top-4 md:-right-8 lg:-top-5 lg:-right-10 w-8 md:w-12 lg:w-14 h-auto select-none"
                 /></span>
               </span>
             </h1>
