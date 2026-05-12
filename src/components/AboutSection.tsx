@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Search, Users, FileText } from "lucide-react";
-import butterfly from "@/assets/butterfly.png";
 
 const values = [
   {
@@ -109,15 +108,6 @@ const AboutSection = () => {
             nennt der Rest der Welt Schmetterling."
           </blockquote>
           <p className="font-body text-sm text-muted-foreground mt-4">— Laotse</p>
-
-          <p className="font-display text-3xl md:text-4xl text-primary mt-10 inline-block relative">
-            Deine Yvonn<span className="relative inline-block">e<img
-              src={butterfly}
-              alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute -top-3 -right-7 md:-top-4 md:-right-9 w-9 md:w-12 h-auto select-none"
-            /></span>
-          </p>
         </motion.div>
       </div>
     </section>
