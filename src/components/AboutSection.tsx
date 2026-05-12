@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Search, Users, FileText } from "lucide-react";
-import butterfly from "@/assets/butterfly.png";
 
 const values = [
   {
